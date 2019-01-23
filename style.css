@@ -25,10 +25,35 @@ header{
     width: 98vw;
     height:90vh;
     background-image: url("Images/image-1.jpg");
+    position: relative;
 }
 .navbar{
     width: 100%;
     text-align: center;
+    padding-top: 20px;
+}
+.header{
+    width: 98vw;
+    height:90vh;
+
+}
+.title{
+    width:90%;
+    float:left;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%)
+}
+.social-media{
+    width: 10%;
+    float: right;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%)
+}
+
+.social-media i{
+    color:#f2a11c
 }
 ul{
     list-style-type: none;
@@ -38,7 +63,8 @@ ul{
 
 li{
     display: inline;
-    padding: 1em;
+    padding: 5px;
+    text-align:center;
 }
 a{
     color: #f4f4f4;
@@ -48,27 +74,55 @@ a{
     font-weight: bold;
 }
 
-.title{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 461px;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-    text-align: center;
-
-    }
-
-
-
 h1{
     color: #f2a11c;
     font-family:'Pacifico', cursive;
     text-transform: capitalize;
-    font-size: 16vh;
-
+    font-size: 12vw;
+    text-align: center;
 
 }
+
+.social-media li{
+    display: block;
+}
+
+.container{
+    width: 100%;
+    height: auto;
+    text-align: center;
+
+}
+.wrapper{
+    width: 80%;
+    height: auto;
+    text-align: center;
+    margin: 0 auto;
+}
+.about, .mission{
+    width: 50%;
+    float:left;
+    height:350px;
+
+}
+.about-background, .misson-background {
+    height:350px;
+    width: 50%;
+
+    float:right;
+}
+.misson-background{
+    float: left;
+    background: url(./Images/image-2-copy.jpg);
+    background-position: center;
+    background-size: contain;
+
+}
+
+.about-background{
+    background: url(./Images/image-2.png);
+    background-position: center;
+    background-size: contain;
+}
+
 
