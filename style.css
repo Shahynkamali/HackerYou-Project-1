@@ -82,6 +82,17 @@ h1{
     text-align: center;
 
 }
+h2{
+    font-family:'Pacifico',cursive;
+    text-transform: capitalize;
+    text-align: left;
+}
+p{
+    font-family: 'Catamaran',sans-serif;
+    text-align: left;
+    width: 75%;
+
+}
 
 .social-media li{
     display: block;
