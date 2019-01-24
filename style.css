@@ -14,29 +14,31 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary
 html{
     font-size: 125%;
 }
+
 *{
     border: 1px solid black;
     margin:0;
     padding:0;
 }
 
-
 header{
-    width: 98vw;
+    width: 100%;
     height:90vh;
     background-image: url("Images/image-1.jpg");
     position: relative;
 }
+
 .navbar{
     width: 100%;
     text-align: center;
     padding-top: 20px;
 }
-.header{
-    width: 98vw;
-    height:90vh;
 
+.header{
+    width: 100%;
+    height:90vh;
 }
+
 .title{
     width:90%;
     float:left;
@@ -44,6 +46,7 @@ header{
     top: 50%;
     transform: translateY(-50%)
 }
+
 .social-media{
     width: 10%;
     float: right;
@@ -55,10 +58,10 @@ header{
 .social-media i{
     color:#f2a11c
 }
+
 ul{
     list-style-type: none;
     margin: 0 auto;
-
 }
 
 li{
@@ -66,6 +69,7 @@ li{
     padding: 5px;
     text-align:center;
 }
+
 a{
     color: #f4f4f4;
     text-decoration: none;
@@ -80,18 +84,18 @@ h1{
     text-transform: capitalize;
     font-size: 12vw;
     text-align: center;
-
 }
+
 h2{
     font-family:'Pacifico',cursive;
     text-transform: capitalize;
     text-align: left;
 }
+
 p{
     font-family: 'Catamaran',sans-serif;
     text-align: left;
     width: 75%;
-
 }
 
 .social-media li{
@@ -102,38 +106,56 @@ p{
     width: 100%;
     height: auto;
     text-align: center;
-
 }
+
 .wrapper{
     width: 80%;
     height: auto;
     text-align: center;
     margin: 0 auto;
 }
+
 .about, .mission{
     width: 50%;
     float:left;
     height:350px;
 
 }
+
+.mission{
+    width: calc(50% - 5%);
+    padding-left: 5%;
+}
+
 .about-background, .misson-background {
     height:350px;
     width: 50%;
-
     float:right;
 }
+
+
 .misson-background{
     float: left;
     background: url(./Images/image-2-copy.jpg);
     background-position: center;
     background-size: contain;
-
+    background-repeat: no-repeat;
 }
 
 .about-background{
     background: url(./Images/image-2.png);
     background-position: center;
     background-size: contain;
+    background-repeat: no-repeat;
 }
+.biker-image{
+    width: 27%;
+    float:left;
 
+}
+.biker-desc{
+    width: 66%;
+    float:right;
+
+}
 
