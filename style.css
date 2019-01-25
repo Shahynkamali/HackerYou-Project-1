@@ -29,6 +29,18 @@ header{
     background-size: cover;
 }
 
+button{
+    background: black;
+    color: #f2a11c;
+    border: none;
+    font-family: 'Catamaran',sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 40px;
+    width:160px;
+    height: 50px;
+}
+
 .navbar{
     width: 100%;
     max-width: 1600px;
@@ -68,7 +80,7 @@ ul{
 
 li{
     display: inline;
-    padding: 5px;
+    padding: 0 20px;
     text-align:center;
 }
 
@@ -110,56 +122,72 @@ p{
     margin: 0 auto;
 }
 .wrap{
-    border: 1px solid black;
     margin: 0 auto;
     
+}
+.about{
+    padding-left: 160px;
+    padding-right: 120px;
+}
+.mission{
+    padding-right: 160px;
+    padding-left: 120px;
 }
 .about, .mission{
     width: 50%;
     float:left;
-    height:450px;
+    height:600px;
     max-width: 100%;
-    border: 1px solid red;
     margin: 0 auto;
     
 
 }
 
+
 .about h2, .mission h2{
-    margin-top:9vh;
+    margin-top:156px;
+    margin-bottom: 20px;
 }
+
 .about-background {
     width: 50%;
-    background: yellow;
+    background: url(./Images/image-2.png);
+    background-size:cover;
+    background-position: center center;
     float:left;
-    height:450px;
+    height:600px;
 
 }
 
 .mission-background{
     width:50%;
-    height:450px;
-    background: yellow;
+    height:600px;
+    background:url(./Images/image-2-copy.jpg);
+    background-size:cover;
+    background-position: center center;
     float:left;
     
 
 }
 
-
-.wrapper{
-    max-width: 1200px;
-    margin:0 auto;
-    border:1px solid blue;
+.greyarea{
+    background: #f4f4f4;
 }
+.wrapper{
+    max-width: calc(1600px - 320px);
+    width: 100%;
+    margin:0 auto;
+    /* border:1px solid blue; */
+}
+
 .biker{
     padding:10% 0;
     margin:0 auto;
 }
 .biker-image{
-    width: 30%;
+    max-width: 315px;
     float:left;
-    border: 1px solid green;
-    height:20%;
+    height:315px;
     
     
 }
@@ -171,21 +199,40 @@ p{
 .biker-desc{
     width:calc(70% - 40px);
     float:left;
-    border: 1px solid blue;
     padding-left:40px;
     
 }
+
+.biker-desc p{
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+.biker-desc button{
+    padding-top:10px;
+    margin:0;
+}
+
 .blackarea{
     max-width: 100%;
-    background: yellow;
-    height:40vh;
+    background: url(./Images/image-5.jpg);
+    background-position: center center;
+    background-size: cover;
+    max-height: 498px;
+    height: 100%;
 }
 .icons{
     margin:0 auto;
     text-align: center;
-    border: 1px solid red;
     height:40vh;
+    color:#f2a11c;
+    font-family: 'Catamaran',sans-serif;
+    text-transform: capitalize;
+    font-size: bold;
     
+}
+.icons i{
+    color:white;
+    font-size: 30px;
 }
 
 figure{
@@ -193,7 +240,6 @@ figure{
     text-align: center;
     width: 20%;
     margin:0 auto;
-    border: 1px solid green;
     position: relative;
     top: 50%;
     transform: translateY(-50%)
@@ -216,3 +262,20 @@ margin: 10% 0;
     width: 33%;
 }
 
+.footer-left{
+    width: 50%;
+    float:left;
+    border: 1px solid brown;
+}
+.footer-right{
+    width: 50%;
+    float:left;
+    border: 1px solid green;
+}
+
+footer{
+    background: black;
+    clear: both;
+    color: white;
+    padding-top: 60px;
+}
