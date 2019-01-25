@@ -16,26 +16,28 @@ html{
 }
 
 *{
-    border: 1px solid black;
+
     margin:0;
     padding:0;
 }
 
 header{
-    width: 100%;
-    height:90vh;
+    max-width: 1600px;
+    min-height:100vh;
     background-image: url("Images/image-1.jpg");
-    position: relative;
+    background-position: center center;
+    background-size: cover;
 }
 
 .navbar{
     width: 100%;
+    max-width: 1600px;
     text-align: center;
     padding-top: 20px;
 }
 
 .header{
-    width: 100%;
+    max-width: 1600px;
     height:90vh;
 }
 
@@ -95,7 +97,7 @@ h2{
 p{
     font-family: 'Catamaran',sans-serif;
     text-align: left;
-    width: 75%;
+    width: 100%;
 }
 
 .social-media li{
@@ -103,59 +105,114 @@ p{
 }
 
 .container{
+    max-width: 1600px;
     width: 100%;
-    height: auto;
-    text-align: center;
-}
-
-.wrapper{
-    width: 80%;
-    height: auto;
-    text-align: center;
     margin: 0 auto;
 }
-
+.wrap{
+    border: 1px solid black;
+    margin: 0 auto;
+    
+}
 .about, .mission{
     width: 50%;
     float:left;
-    height:350px;
+    height:450px;
+    max-width: 100%;
+    border: 1px solid red;
+    margin: 0 auto;
+    
 
 }
 
-.mission{
-    width: calc(50% - 5%);
-    padding-left: 5%;
+.about h2, .mission h2{
+    margin-top:9vh;
 }
-
-.about-background, .misson-background {
-    height:350px;
+.about-background {
     width: 50%;
-    float:right;
+    background: yellow;
+    float:left;
+    height:450px;
+
+}
+
+.mission-background{
+    width:50%;
+    height:450px;
+    background: yellow;
+    float:left;
+    
+
 }
 
 
-.misson-background{
-    float: left;
-    background: url(./Images/image-2-copy.jpg);
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
+.wrapper{
+    max-width: 1200px;
+    margin:0 auto;
+    border:1px solid blue;
 }
-
-.about-background{
-    background: url(./Images/image-2.png);
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
+.biker{
+    padding:10% 0;
+    margin:0 auto;
 }
 .biker-image{
-    width: 27%;
+    width: 30%;
     float:left;
+    border: 1px solid green;
+    height:20%;
+    
+    
+}
+.biker-image img{
+    width: 100%;
+    max-width: 100%;    
 
 }
 .biker-desc{
-    width: 66%;
-    float:right;
+    width:calc(70% - 40px);
+    float:left;
+    border: 1px solid blue;
+    padding-left:40px;
+    
+}
+.blackarea{
+    max-width: 100%;
+    background: yellow;
+    height:40vh;
+}
+.icons{
+    margin:0 auto;
+    text-align: center;
+    border: 1px solid red;
+    height:40vh;
+    
+}
 
+figure{
+    display: inline-block;
+    text-align: center;
+    width: 20%;
+    margin:0 auto;
+    border: 1px solid green;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%)
+}
+
+.gallery-title h2{
+width: 100%;
+text-align: center;
+margin: 0 auto;
+border: 1px solid red;
+margin: 10% 0;
+}
+.gallery{
+    width: 100%;
+    margin: 0 auto;
+}
+
+.gallery-item{
+    float:left;
+    width: 33%;
 }
 
