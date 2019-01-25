@@ -155,13 +155,13 @@ p{
     background-size:cover;
     background-position: center center;
     float:left;
-    height:600px;
+    min-height:600px;
 
 }
 
 .mission-background{
     width:50%;
-    height:600px;
+    min-height:600px;
     background:url(./Images/image-2-copy.jpg);
     background-size:cover;
     background-position: center center;
@@ -177,7 +177,7 @@ p{
     max-width: calc(1600px - 320px);
     width: 100%;
     margin:0 auto;
-    /* border:1px solid blue; */
+    border:1px solid blue;
 }
 
 .biker{
@@ -186,9 +186,7 @@ p{
 }
 .biker-image{
     max-width: 315px;
-    float:left;
-    height:315px;
-    
+    float:left;`
     
 }
 .biker-image img{
@@ -217,8 +215,7 @@ p{
     background: url(./Images/image-5.jpg);
     background-position: center center;
     background-size: cover;
-    max-height: 498px;
-    height: 100%;
+    min-height: 498px;
 }
 .icons{
     margin:0 auto;
@@ -254,28 +251,84 @@ margin: 10% 0;
 }
 .gallery{
     width: 100%;
-    margin: 0 auto;
+    margin-bottom: 100px;
+    text-align: center;
 }
 
 .gallery-item{
     float:left;
-    width: 33%;
+    max-width: calc(33% - 22px);
+    width: 100%;
+    margin: 0 auto;
+  /*   height: 100%; */
+
 }
 
+.gallery-item img{
+    width: 100%;
+    /* max-width: 100%; */
+    
+    
+    
+}
+
+.gallery-item:nth-of-type(2) {
+    float: left;
+    margin:0 39px;
+
+    
+}
+
+.footer{
+    height:23vh;
+}
 .footer-left{
     width: 50%;
     float:left;
-    border: 1px solid brown;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%)
+    
+}
+
+.footer-left span{
+    line-height: 2px;
 }
 .footer-right{
     width: 50%;
     float:left;
-    border: 1px solid green;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%)
+}
+input[type=email] {
+    width: 70%;
+    padding: 10px 20px;
+}
+input[type=submit]{
+    color:black;
+    background: #f2a11c;
+    border: none;
+    padding: 10px 20px;
 }
 
 footer{
-    background: black;
+    background:#1f2022;
     clear: both;
-    color: white;
+    color: #f4f4f4;
     padding-top: 60px;
+    height:40vh;
 }
+footer h2{
+    color: #f2a11c;
+    padding: 20px 0;
+}
+.copyright{
+    clear:both;
+    color: #4a4a4a;
+    text-align: center;
+    background: black;
+    font-family: 'Catamaran',sans-serif;
+
+}
+
