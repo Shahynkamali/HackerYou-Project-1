@@ -155,7 +155,7 @@ p{
     background: url(./Images/image-2.png);
     background-size:cover;
     background-position: center center;
-    float:left;
+    float:right;
     min-height:68vh;
 
 }
@@ -375,9 +375,114 @@ input[type=submit]{
         margin-top: 10%;
         
     }
+    input[type="submit"] {
+        margin-left: 0;
+        width: 75%;
+    }
 }
-@media only screen and (max-width: 910px){
+@media only screen and (max-width: 1100px){
+    .wrapper {
+        width: 90%;
+    }
+    .biker-image {
+        margin-top: 5%;
+    }
 
+}
+@media only screen and (max-width: 980px){
+    .wrapper {
+        width: 90%;
+    }
+    .biker {
+        height: 76vh;
+        padding-top: 4%;
 
+    }
+    .biker-image {
+        margin-top: 10%;
+    }
+    .biker-desc h2 {
+        font-size: 1.5rem;
+        margin-top: 5%;
+    }
+    .biker-desc p {
+        margin-top: 2%;
+        margin-bottom: 4.5%;
+        font-size: 0.9rem;
+    }
+}
+
+@media only screen and (max-width: 850px){
+.about p,
+.mission p {
+    font-size: 0.9rem;
+
+}
+}
+
+@media only screen and (max-width: 780px){
+    .wrap{
+    width: 69%;
+    height: 40vh;
+
+    }
+    .biker-image {
+        width: 40%;
+        margin-top: 16%;
+    }
+    .biker-desc {
+        width: 60%;
+    }
+    .biker-desc p {
+        font-size: 0.8rem;
+    }
+    .about, .mission{
+        text-align: center;
+    }
+    .about p,
+    .about h2,
+    .mission p,
+    .mission h2{
+        text-align: center;
+    }
+    .about-background {
+        min-height: 45vh;
+        float:none;
+        width:100%;
+    }
+    .mission-background{
+        width: 100%;
+        min-height: 45vh;
+    }
+    .greyarea {
+        height: 133vh;
+
+    }
+    .biker {
+    height: 133vh;
+    padding-top: 4%;
+    width: 100%;
+    text-align: center;
+
+    }
+    .biker-image {
+    width: 70%;
+    float: none; 
+    margin: 0 auto;
+    margin-top: 0px;
+    }
+    .biker-desc{
+    margin: 0 auto;
+    float:none;
+    padding:0;
+    }
+    .biker-desc h2{
+        text-align: center;
+    }
+    .biker-desc p{
+        font-size: 0.9rem;
+        padding:0;
+    }
+    
 
 }
