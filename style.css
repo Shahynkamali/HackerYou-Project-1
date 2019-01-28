@@ -39,6 +39,7 @@ button{
     margin-top: 40px;
     width:160px;
     height: 50px;
+    font-size: 0.9rem;
 }
 
 .navbar{
@@ -58,7 +59,7 @@ button{
     float:left;
     position: relative;
     top: 50%;
-    transform: translateY(-50%)
+    transform: translateY(-50%);
 }
 
 .social-media{
@@ -66,7 +67,7 @@ button{
     float: right;
     position: relative;
     top: 50%;
-    transform: translateY(-50%)
+    transform: translateY(-50%);
 }
 
 .social-media i{
@@ -122,22 +123,20 @@ p{
     margin: 0 auto;
 }
 .wrap{
-    margin: 0 auto;
+    float: left;
+    width: calc(50% - 210px);
+    height: 68vh;
+    margin-left:105px;
+    margin-right: 105px;
     
 }
-.about{
-    padding-left: 160px;
-    padding-right: 120px;
-}
-.mission{
-    padding-right: 160px;
-    padding-left: 120px;
-}
+
+
 .about, .mission{
-    width: 50%;
-    float:left;
-    height:600px;
-    max-width: 100%;
+    width: 100%;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
     margin: 0 auto;
     
 
@@ -145,8 +144,10 @@ p{
 
 
 .about h2, .mission h2{
-    margin-top:156px;
-    margin-bottom: 20px;
+    line-height: 68px;
+}
+.about p, .mission p{
+    font-size: 1.3rem;
 }
 
 .about-background {
@@ -155,13 +156,13 @@ p{
     background-size:cover;
     background-position: center center;
     float:left;
-    min-height:600px;
+    min-height:68vh;
 
 }
 
 .mission-background{
     width:50%;
-    min-height:600px;
+    min-height:68vh;
     background:url(./Images/image-2-copy.jpg);
     background-size:cover;
     background-position: center center;
@@ -170,29 +171,35 @@ p{
 
 }
 
-.greyarea{
-    background: #f4f4f4;
-}
+
 .wrapper{
     max-width: calc(1600px - 320px);
     width: 100%;
     margin:0 auto;
-    border:1px solid blue;
     
+    
+}
+.greyarea {
+    background: #f4f4f4;
+    height: 64vh;
+
+
 }
 
 .biker{
-    padding:10% 0;
     margin:0 auto;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
 }
 .biker-image{
-    max-width: 315px;
-    float:left;`
+    width: 30%;
+    float:left;
     
 }
 .biker-image img{
     width: 100%;
-    max-width: 100%;    
+    display:block;   
 
 }
 .biker-desc{
@@ -201,11 +208,15 @@ p{
     padding-left:40px;
     
 }
+.biker-desc h2{
+    font-size:2rem;
+}
 
 .biker-desc p{
-    padding-bottom: 15px;
-    padding-top: 15px;
-}
+    margin-top: 2%;
+    margin-bottom: 6.5%;
+        }
+
 .biker-desc button{
     padding-top:10px;
     margin:0;
@@ -216,7 +227,6 @@ p{
     background: url(./Images/image-5.jpg);
     background-position: center center;
     background-size: cover;
-    min-height: 498px;
 }
 .icons{
     margin:0 auto;
@@ -224,10 +234,9 @@ p{
     height:40vh;
     color:#f2a11c;
     font-family: 'Catamaran',sans-serif;
-    text-transform: capitalize;
     font-size: bold;
     clear:both;
-    height: 60vh;
+    height: 58vh;
 }
 .icons i{
     color:white;
@@ -241,33 +250,44 @@ figure{
     margin:0 auto;
     position: relative;
     top: 50%;
-    transform: translateY(-50%)
+    transform: translateY(-50%);
+}
+
+figcaption{
+    font-size:1.4rem;
+}
+
+.photo-gallery {
+    height: 84vh;
+    
+}
+.gallery {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .gallery-title h2{
 width: 100%;
 text-align: center;
-border: 1px solid red;
-margin: 10% 0;
+margin-bottom: 5%;
+font-size: 2rem;
+
+
 }
-.gallery{
-    width: 100%;
-    margin-bottom: 20%;
-    
-    
-}
+
 
 .gallery-item{
 width: calc((100% - 78px)/ 3);
 float:left;  
-  /*   height: 100%; */
+
+
 
 }
 
 .gallery-item img{
-    width: 100%;
-    display: block;
-    /* max-width: 100%; */
+width: 100%;
+display: block;
     
     
     
@@ -282,57 +302,81 @@ float:left;
     margin-right: 0;
     margin-left: 39px;
 }
+footer {
+    background: #1f2022;
+    clear: both;
+    color: #f4f4f4;
+    max-width:1600px;
+    padding-top:3%;
+   /*  height:40vh; */
 
-.footer{
-    height:23vh;
 }
+
+footer h2 {
+    color: #f2a11c;
+    line-height:70px;
+    /* padding: 20px 0; */
+}
+.footer{
+    margin: 5% 0;
+}
+
+
+
 .footer-left{
     width: 50%;
     float:left;
-    position: relative;
+    /* position: relative;
     top: 50%;
-    transform: translateY(-50%)
+    transform: translateY(-50%); */
+    line-height: 40px;
+    font-family: 'Catamaran',sans-serif;
     
 }
 
-.footer-left span{
-    line-height: 2px;
-}
+
 .footer-right{
     width: 50%;
     float:left;
-    position: relative;
+   /*  position: relative;
     top: 50%;
-    transform: translateY(-50%)
+    transform: translateY(-50%); */
+   /*  line-height: 60px; */
+}
+.footer-right p{
+    margin-bottom: 3%;
+}
+
+input{
+    height:60px;
 }
 input[type=email] {
-    width: 70%;
-    padding: 10px 20px;
+    font-family: 'Catamaran',sans-serif;
+    width:75%;
+    text-align: left;
+    padding-left:20px;
 }
+
+
 input[type=submit]{
     color:black;
     background: #f2a11c;
     border: none;
-    padding: 10px 20px;
+    text-transform: uppercase;
+    font-family: 'Catamaran',sans-serif;
+    margin-left: -10px;
+    font-weight: bold;
+    width: 25%;
 }
 
-footer{
-    background:#1f2022;
-    clear: both;
-    color: #f4f4f4;
-    padding-top: 60px;
-    height:40vh;
-}
-footer h2{
-    color: #f2a11c;
-    padding: 20px 0;
-}
+
 .copyright{
     clear:both;
     color: #4a4a4a;
     text-align: center;
     background: black;
     font-family: 'Catamaran',sans-serif;
+    word-spacing: 20%;
 
 }
 
