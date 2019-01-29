@@ -181,16 +181,18 @@ p{
 }
 .greyarea {
     background: #f4f4f4;
-    height: 64vh;
+    height: 100%;
 
 
 }
 
 .biker{
     margin:0 auto;
-    position: relative;
+    padding: 10% 0;
+    /* position: relative;
     top: 50%;
     transform: translateY(-50%);
+    height:100%; */
 }
 .biker-image{
     width: 30%;
@@ -394,7 +396,7 @@ input[type=submit]{
         width: 90%;
     }
     .biker {
-        height: 76vh;
+        height: 100%;
         padding-top: 4%;
 
     }
@@ -430,16 +432,19 @@ input {
 
 @media only screen and (max-width: 780px){
     .wrap{
-    width: 69%;
+    width: 70%;
     height: 40vh;
 
+    }
+    button{
+        margin:8px;
     }
     .biker-image {
         width: 40%;
         margin-top: 16%;
     }
     .biker-desc {
-        width: 60%;
+        width: 90%;
     }
     .biker-desc p {
         font-size: 0.8rem;
@@ -464,12 +469,12 @@ input {
     }
     .greyarea {
 
-        height: 121vh;
-        padding-bottom: 6%;
+       /*  height: 118vh;
+        padding-bottom: 6%; */
 
     }
     .biker {
-    height: 107vh;
+    /* height: 98vh; */
     padding-top: 4%;
     width: 100%;
     text-align: center;
@@ -488,6 +493,7 @@ input {
     }
     .biker-desc h2{
     text-align: center;
+    width: 100%;
     }
     .biker-desc p{
     font-size: 0.9rem;
@@ -502,8 +508,7 @@ input {
     height: 54vh;
     }
     figcaption {
-    font-size: 1.3rem;
-
+        font-size: 1.1rem;
     }
     .photo-gallery {
         height: 45vh;
@@ -553,11 +558,11 @@ input {
     }
 
     .greyarea {
-        height: 131vh;
+        /* height: 131vh; */
     }
     .biker {
-
-        height: 111vh;
+        text-align: center;
+        /* height: 111vh; */
     }
     .icons {
     height: 34vh;
@@ -580,6 +585,10 @@ input {
         float: right;
         display: none;
 
+    }
+
+    figure{
+        width: 25%;
     }
 
     .gallery-item {
@@ -607,19 +616,18 @@ input {
         top: 0;
         transform: translateY(0%);
         margin: 0 auto;
+        padding-bottom: 15%;
     }
 
-    .greyarea {
-        height: 170vh;
-    }
+    
     .biker{
         height: auto;
-        top: 0;
-        transform: translateY(36%);
+       /*  top: 0;
+        transform: translateY(36%); */
         margin: 0 auto;
+        margin-top: 65%;
     }
     .biker-desc {
-
         width: 90%;
 
     }
@@ -627,4 +635,26 @@ input {
         margin-bottom: 2%;
         padding:0;
     }
+    .icons i {
+        font-size: 26px;
+    }
+}
+@media only screen and (max-width: 375px){
+
+    li {
+        margin: 0 3%;
+        padding:0;
+    }
+
+    .greyarea {
+        margin-top: 81%;
+    }
+    .biker{
+    padding-top: 14%;
+    }
+
+    .wrap {
+        padding-bottom: 15%;
+    }
+
 }
