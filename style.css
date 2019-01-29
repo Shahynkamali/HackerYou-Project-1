@@ -455,11 +455,13 @@ input[type=submit]{
         min-height: 45vh;
     }
     .greyarea {
-        height: 133vh;
+
+        height: 121vh;
+        padding-bottom: 6%;
 
     }
     .biker {
-    height: 133vh;
+    height: 107vh;
     padding-top: 4%;
     width: 100%;
     text-align: center;
@@ -477,12 +479,132 @@ input[type=submit]{
     padding:0;
     }
     .biker-desc h2{
-        text-align: center;
+    text-align: center;
     }
     .biker-desc p{
-        font-size: 0.9rem;
-        padding:0;
+    font-size: 0.9rem;
+    padding:0;
     }
-    
+    figure{
+    top: 21%;
+    display: block;
+    padding-top: 12px;
+    }
+    .icons{
+    height: 54vh;
+    }
+    figcaption {
+    font-size: 1.3rem;
 
+    }
+    .photo-gallery {
+        height: 45vh;
+
+    }
+    input[type="submit"] {
+        width: 100%;
+    }
+    input[type="email"] {
+        width: 100%;
+        text-align: center;
+    }
+    .footer-left {
+        float:none;
+        width: 100%;
+        text-align: center;
+    }
+    .footer-left h2,
+    .footer-right h2,
+    .footer-right p{
+        text-align: center;
+
+    }
+    .footer-right {
+        width: 100%;
+        float: none;
+        text-align: center;
+        text-align: center;
+
+    }
+
+}
+@media only screen and (max-width: 500px){
+
+    .wrap {
+
+        width: 60%;
+        height: 44vh;
+
+    }
+    button{
+        margin-top: 12px;
+    }
+
+    .greyarea {
+        height: 131vh;
+    }
+    .biker {
+
+        height: 111vh;
+    }
+    .icons {
+    height: 34vh;
+    margin-bottom: 5%;
+    }
+    figcaption{
+        font-size: 1rem;
+    }
+    .photo-gallery {
+        height: 33vh;
+    }
+    .photo-gallery h2{
+        font-size: 1.5rem;
+    }
+    .photo-gallery {
+        margin-bottom: 7%;
+    }
+    .gallery-item:nth-of-type(3n+1) {
+        margin-left: 0;
+        float: right;
+        display: none;
+
+    }
+
+    .gallery-item {
+        width: calc((100% - 40px)/ 2);
+        float: left;
+
+    }
+
+}
+
+@media only screen and (max-width: 430px){
+    .wrap {
+        float:none;
+        width: 100%;
+        height: 45vh;
+        margin: 0 auto;
+
+    }
+    .mission{
+        position: static;
+        top: 0;
+        transform: translateY(0%);
+        margin: 0 auto;
+    }
+
+    .greyarea {
+        height: 170vh;
+    }
+    .biker{
+        height: auto;
+        top: 0;
+        transform: translateY(36%);
+        margin: 0 auto;
+    }
+    .biker-desc {
+
+        width: 90%;
+
+    }
 }
