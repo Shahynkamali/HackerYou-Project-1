@@ -29,6 +29,12 @@ header{
     background-size: cover;
 }
 
+.hamburger{
+    float: right;
+    width: 100%;
+    display: none;
+}
+
 button{
     background: black;
     color: #f2a11c;
@@ -656,5 +662,27 @@ input {
     .wrap {
         padding-bottom: 15%;
     }
+    header .navbar {
+        display:none;
+        position: relative;
+    }
+    .hamburger{
+        display: block;
+        border: 1px solid black;
+        width: 100%;
+        text-align: right;
+        position: absolute;
+        
+    }
+    .hamburger i{
+        color: white;
+        font-size: 40px;
+    }
+
+    i:hover .navbar{
+    display: block;
+    display: inline;
+    }
+    
 
 }
