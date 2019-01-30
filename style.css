@@ -4,21 +4,38 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary
 
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
-/*  squash =    #f2a11c
-    darkergrey= #1f2022
-    darkgrey=   #4a4a4a
-    white=      #ffffff
-    lightgrey=  #f4f4f4
-     */
-
 html{
     font-size: 125%;
 }
 
 *{
-
     margin:0;
     padding:0;
+}
+
+.visuallyhidden:not(:focus):not(:active){
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+.skip-link{
+    position: absolute;
+    left: -1000px;
+    top: 5px;
+    z-index: 999;
+    background: white;
+    color: black;
+}
+
+.skip-link:focus{
+    left: 0;
 }
 
 header{
@@ -46,6 +63,11 @@ button{
     width:160px;
     height: 50px;
     font-size: 0.9rem;
+}
+
+button:hover{
+    background: #f2a11c;
+    color:black;
 }
 
 .navbar{
@@ -79,6 +101,9 @@ button{
 .social-media i{
     color:#f2a11c
 }
+.social-media i:hover{
+    color:white;
+}
 
 ul{
     list-style-type: none;
@@ -90,6 +115,9 @@ li{
     padding: 0 20px;
     text-align:center;
 }
+li:hover{
+    cursor: pointer;
+    }
 
 a{
     color: #f4f4f4;
@@ -99,10 +127,18 @@ a{
     font-weight: bold;
 }
 
+a:hover{
+    color:#f2a11c;
+}
+
+h1, 
+h2{
+    font-family:'Pacifico',cursive;
+    text-transform: capitalize;
+}
+
 h1{
     color: #f2a11c;
-    font-family:'Pacifico', cursive;
-    text-transform: capitalize;
     font-size: 12vw;
     text-align: center;
 }
@@ -137,46 +173,40 @@ p{
     
 }
 
-
 .about, .mission{
     width: 100%;
     position: relative;
     top: 50%;
     transform: translateY(-50%);
     margin: 0 auto;
-    
-
 }
-
 
 .about h2, .mission h2{
     line-height: 68px;
 }
+
 .about p, .mission p{
     font-size: 1.3rem;
 }
 
-.about-background {
-    width: 50%;
-    background: url(./Images/image-2.png);
+.about-background,
+.mission-background{
     background-size:cover;
     background-position: center center;
-    float:right;
+    width: 50%;
     min-height:68vh;
 
+}
+
+.about-background {
+    background: url(./Images/image-2.png);
+    float:right;
 }
 
 .mission-background{
-    width:50%;
-    min-height:68vh;
     background:url(./Images/image-2-copy.jpg);
-    background-size:cover;
-    background-position: center center;
     float:left;
-    
-
 }
-
 
 .wrapper{
     max-width: calc(1600px - 320px);
@@ -188,18 +218,13 @@ p{
 .greyarea {
     background: #f4f4f4;
     height: 100%;
-
-
 }
 
 .biker{
     margin:0 auto;
     padding: 10% 0;
-    /* position: relative;
-    top: 50%;
-    transform: translateY(-50%);
-    height:100%; */
 }
+
 .biker-image{
     width: 30%;
     float:left;
@@ -223,7 +248,7 @@ p{
 .biker-desc p{
     margin-top: 2%;
     margin-bottom: 6.5%;
-        }
+}
 
 .biker-desc button{
     padding-top:10px;
@@ -236,6 +261,7 @@ p{
     background-position: center center;
     background-size: cover;
 }
+
 .icons{
     margin:0 auto;
     text-align: center;
@@ -263,12 +289,21 @@ figure{
 
 figcaption{
     font-size:1.4rem;
+    
+}
+figcaption a{
+    color:#f2a11c;
+}
+
+figcaption a:hover{
+    color: white;
+    cursor: pointer;
 }
 
 .photo-gallery {
     height: 84vh;
-    
 }
+
 .gallery {
     position: relative;
     top: 50%;
@@ -286,17 +321,11 @@ figcaption{
 .gallery-item{
     width: calc((100% - 78px)/ 3);
     float:left;  
-
-
-
 }
 
 .gallery-item img{
 width: 100%;
-display: block;
-    
-    
-    
+display: block;    
 }
 
 .gallery-item:nth-of-type(3n + 1) {
@@ -308,6 +337,7 @@ display: block;
     margin-right: 0;
     margin-left: 39px;
 }
+
 footer {
     background: #1f2022;
     clear: both;
@@ -321,6 +351,7 @@ footer h2 {
     color: #f2a11c;
     line-height:70px;
 }
+
 .footer{
     margin: 5% 0;
 }
@@ -330,13 +361,13 @@ footer h2 {
     float:left;
     line-height: 40px;
     font-family: 'Catamaran',sans-serif;
-    
 }
 
 .footer-right{
     width: 50%;
     float:left;
 }
+
 .footer-right p{
     margin-bottom: 3%;
 }
@@ -344,6 +375,7 @@ footer h2 {
 input{
     height:60px;
 }
+
 input[type=email] {
     font-family: 'Catamaran',sans-serif;
     width:75%;
@@ -362,6 +394,11 @@ input[type=submit]{
     width: 25%;
 }
 
+input[type=submit]:hover{
+    background-color: black;
+    color:#f2a11c;
+}
+
 .copyright{
     clear:both;
     color: #4a4a4a;
@@ -370,14 +407,15 @@ input[type=submit]{
     font-family: 'Catamaran',sans-serif;
     word-spacing: 20%;
 }
+
+
 @media only screen and (max-width: 1024px) {
     .about p,
     .mission p {
         font-size: 1em;
     }
     .wrapper {
-        width: 90%;
-        
+        width: 90%;  
     }
     .biker-image {
         margin-top: 10%;
@@ -392,6 +430,7 @@ input[type=submit]{
     .wrapper {
         width: 90%;
     }
+
     .biker-image {
         margin-top: 5%;
     }
@@ -401,23 +440,27 @@ input[type=submit]{
     .wrapper {
         width: 90%;
     }
+
     .biker {
         height: 100%;
         padding-top: 4%;
-
     }
+
     .biker-image {
         margin-top: 10%;
     }
+
     .biker-desc h2 {
         font-size: 1.5rem;
         margin-top: 5%;
     }
+
     .biker-desc p {
         margin-top: 2%;
         margin-bottom: 4.5%;
         font-size: 0.9rem;
     }
+
     input {
         margin-bottom: 2%;
         padding: 0;
@@ -425,36 +468,42 @@ input[type=submit]{
 }
 
 @media only screen and (max-width: 850px){
-.about p,
-.mission p {
-    font-size: 0.9rem;
+    .about p,
+    .mission p {
+        font-size: 0.9rem;
 
-}
-input {
-    margin-bottom: 2%;
-    padding: 0;
-}
+    }
+    
+    input {
+        margin-bottom: 2%;
+        padding: 0;
+    }
 }
 
 @media only screen and (max-width: 780px){
+
     .wrap{
     width: 70%;
     height: 40vh;
-
     }
+
     button{
         margin:8px;
     }
+
     .biker-image {
         width: 40%;
         margin-top: 16%;
     }
+
     .biker-desc {
         width: 90%;
     }
+
     .biker-desc p {
         font-size: 0.8rem;
     }
+
     .about, .mission{
         text-align: center;
     }
@@ -464,39 +513,38 @@ input {
     .mission h2{
         text-align: center;
     }
+
     .about-background {
         min-height: 45vh;
         float:none;
         width:100%;
     }
+
     .mission-background{
         width: 100%;
         min-height: 45vh;
     }
-    .greyarea {
 
-       /*  height: 118vh;
-        padding-bottom: 6%; */
-
-    }
     .biker {
-    /* height: 98vh; */
-    padding-top: 4%;
-    width: 100%;
+        padding-top: 4%;
+        width: 100%;
     text-align: center;
 
     }
+
     .biker-image {
     width: 70%;
     float: none; 
     margin: 0 auto;
     margin-top: 0px;
     }
+
     .biker-desc{
     margin: 0 auto;
     float:none;
     padding:0;
     }
+
     .biker-desc h2{
     text-align: center;
     width: 100%;
@@ -563,34 +611,35 @@ input {
         margin-top: 12px;
     }
 
-    .greyarea {
-        /* height: 131vh; */
-    }
     .biker {
         text-align: center;
-        /* height: 111vh; */
+
     }
+
     .icons {
     height: 34vh;
     margin-bottom: 5%;
     }
+
     figcaption{
         font-size: 1rem;
     }
     .photo-gallery {
         height: 33vh;
     }
+
     .photo-gallery h2{
         font-size: 1.5rem;
     }
+
     .photo-gallery {
         margin-bottom: 7%;
     }
+
     .gallery-item:nth-of-type(3n+1) {
         margin-left: 0;
         float: right;
         display: none;
-
     }
 
     figure{
@@ -600,8 +649,8 @@ input {
     .gallery-item {
         width: calc((100% - 40px)/ 2);
         float: left;
-
     }
+
     input {
         margin-bottom: 2%;
         padding: 0;
@@ -615,8 +664,8 @@ input {
         width: 100%;
         height: 45vh;
         margin: 0 auto;
-
     }
+
     .mission{
         position: static;
         top: 0;
@@ -624,30 +673,64 @@ input {
         margin: 0 auto;
         padding-bottom: 15%;
     }
-
     
     .biker{
         height: auto;
-       /*  top: 0;
-        transform: translateY(36%); */
         margin: 0 auto;
         margin-top: 65%;
     }
+
     .biker-desc {
         width: 90%;
-
     }
+
     input{
         margin-bottom: 2%;
         padding:0;
     }
-    .icons i {
+
+    .icons i{
         font-size: 26px;
     }
+
+    .hamburger{
+        display: block;
+        width: 100%;
+        height: 300px;
+        text-align: right;
+        position: absolute;
+    }
+
+    .hamburger i{
+        color: white;
+        font-size: 40px;
+    }
+
+
+
+    .onHover{
+        display: none;
+        padding: 37px 24px;
+        line-height: 59px;
+        margin-left: 50%;
+        margin-top: 5%;
+        background: black;
+        border: 5px solid #444;
+        right: 20px;
+        top: 60px;
+        width: 50%;
+        border-radius: 4px 0 4px 4px;
+    }
+
+    .hamburger:hover+.onHover {
+        display: inline-block;
+    }
+
 }
+
 @media only screen and (max-width: 375px){
 
-    li {
+    li{
         margin: 0 3%;
         padding:0;
     }
@@ -655,34 +738,16 @@ input {
     .greyarea {
         margin-top: 81%;
     }
+    
     .biker{
-    padding-top: 14%;
+        padding-top: 14%;
     }
 
     .wrap {
         padding-bottom: 15%;
     }
-    header .navbar {
-        display:none;
-        position: relative;
-    }
-    .hamburger{
-        display: block;
-        border: 1px solid black;
-        width: 100%;
-        text-align: right;
-        position: absolute;
-        
-    }
-    .hamburger i{
-        color: white;
-        font-size: 40px;
-    }
-
-    i:hover .navbar{
-    display: block;
-    display: inline;
-    }
+    
+    
     
 
 }
