@@ -41,7 +41,7 @@ html{
 header{
     max-width: 1600px;
     min-height:100vh;
-    background-image: url("Images/image-1.jpg");
+    background: url("image/image-1.jpg");
     background-position: center center;
     background-size: cover;
 }
@@ -199,12 +199,12 @@ p{
 }
 
 .aboutBackground {
-    background: url(./Images/image-2.png);
+    background: url(./image/image-2.png);
     float:right;
 }
 
 .missionBackground{
-    background:url(./Images/image-2-copy.jpg);
+    background:url(./image/image-2-copy.jpg);
     float:left;
 }
 
@@ -257,7 +257,7 @@ p{
 
 .blackarea{
     max-width: 100%;
-    background: url(./Images/image-5.jpg);
+    background: url(./image/image-5.jpg);
     background-position: center center;
     background-size: cover;
 }
@@ -600,6 +600,11 @@ input[type=submit]:hover{
 
 }
 @media only screen and (max-width: 500px){
+
+
+    h1{
+        font-size: 18vw;
+    }
 
     .wrap {
 
