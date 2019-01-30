@@ -25,7 +25,7 @@ html{
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
-.skip-link{
+.skipLink{
     position: absolute;
     left: -1000px;
     top: 5px;
@@ -34,7 +34,7 @@ html{
     color: black;
 }
 
-.skip-link:focus{
+.skipLink:focus{
     left: 0;
 }
 
